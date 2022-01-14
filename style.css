@@ -1,0 +1,146 @@
+@font-face {
+  font-family: 'Jedi';
+  src: url('star_jedi/starjedi/Starjedi.ttf');
+}
+@font-face {
+  font-family: 'Jedi_vazada';
+  src: url('star_jedi/starjout/Starjout.ttf');
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url('https://images.pexels.com/photos/1341279/pexels-photo-1341279.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+}
+#tittle {
+  font-family: 'Jedi';
+  text-align: center;
+  font-size: 50px;
+  color: yellow;
+  margin-top: 2%;
+}
+#display {
+  margin: 2% 2%;
+  height: 26.875rem;
+}
+#imagem {
+  width: 60%;
+  height: 84%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50px;
+  font-family: 'Jedi';
+}
+#upper {
+  display: flex;
+  justify-content: flex-end;
+}
+#vidas {
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/7/70/Symbolic_Love_Heart.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  margin-right: 40px;
+}
+
+#ação {
+  align-self: center;
+  margin-bottom: 2%;
+  font-size: 18px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 0px 0px 30px 30px;
+  width: 100%;
+}
+#btns {
+  margin-top: 2%;
+  display: flex;
+  gap: 3%;
+  justify-content: center;
+}
+#bt {
+  border-radius: 100px;
+  height: 40px;
+  width: 95px;
+  font-family: 'Jedi';
+}
+#bot {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+a {
+  text-decoration: none;
+  color: yellow;
+  font-family: 'Jedi_vazada';
+}
+#p_name {
+  font-family: 'Jedi';
+  border-radius: 50px;
+}
+#player_name {
+  font-family: 'Jedi';
+  border-radius: 100px;
+}
+#player_name:hover {
+  background-color: rgb(255, 255, 147);
+}
+
+#page2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 2%;
+  margin-bottom: 4%;
+  padding-top: 2%;
+}
+#mp4 {
+  width: 80%;
+  height: 20%;
+  justify-content: center;
+}
+
+#page3 {
+  margin-top: 3%;
+  display: flex;
+  gap: 20%;
+  font-size: 18px;
+  color: yellow;
+  font-family: 'Jedi';
+}
+#regras {
+  width: 60%;
+  padding-left: 1%;
+}
+
+ol {
+  font-size: 17px;
+}
+
+#vencedores {
+  overflow-y: auto;
+  height: 320px;
+}
+#btn-up {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: end;
+  font-family: 'Jedi';
+  font-size: 27px;
+  margin-right: 2%;
+}
+#btn-up:hover {
+  color: white;
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Destrua a Estrela da Morte!</title>
+  </head>
+  <body>
+    <div id="tittle">Destrua a Estrela da Morte!</div>
+    <section id="display">
+      <div id="imagem">
+        <div id="upper">
+          <div id="vidas">3</div>
+        </div>
+        <div id="ação">insira seu nome para jogar.</div>
+      </div>
+      <div id="btns">
+        <input type="button" id="bt" value="Atirar" onclick="atirar()" />
+        <input type="button" id="bt" value="Desviar" onclick="desviar()" />
+        <input type="button" id="bt" value="Acelerar" onclick="acelerar()" />
+      </div>
+    </section>
+    <div id="bot">
+      <a href="#btn-up">Regras</a>
+      <div id="player">
+        <input type="text" id="p_name" placeholder=" insira seu nome" />
+        <input
+          type="button"
+          id="player_name"
+          value="Entrar"
+          onclick="iniciar()"
+        />
+      </div>
+      <a href="#mp4" onclick="reprodução()">História</a>
+      <a href="#btn-up">Vencedores</a>
+    </div>
+    <div id="page2">
+      <video id="mp4" src="imagens/video.mp4" onclick="reprodução()"></video>
+    </div>
+    <section id="page3">
+      <div id="regras">
+        <h3 id="reg">% regras</h3>
+        <ol>
+          <li>a x-wing começa o jogo com 3 pontos de vida.</li>
+          <li>o jogo deverá ser dividido em turnos.</li>
+          <li>
+            cada turno o jogador escolhe uma ação para a X-Wing: "atirar",
+            "desviar" ou "acelerar".
+          </li>
+          <li>
+            cada turno a x-wing se encontra em um dos cenários:
+            <p>
+              "tie-fighter atacando" / "canhão de plasma atacando" / "corredor
+              livre" / "ponto fraco à frente".
+            </p>
+          </li>
+          <li>
+            caso o cenário for "tie-fighter atacando", o jogador deverá
+            "desviar" ou a x-wing perde 1 ponto.
+          </li>
+          <li>
+            caso o cenário for "canhão de plasma atacando", o jogador deverá
+            "atirar" ou a x-wing perde 1 ponto.
+          </li>
+          <li>
+            caso o cenário for "corredor livre", o jogador deverá "acelerar" ou
+            a x-wing perde 1 ponto.
+          </li>
+          <li>
+            se zerar os pontos de vida da x-wing, o jogo termina e o jogador
+            perdeu.
+          </li>
+          <li>
+            caso o cenário for "ponto fraco à frente" e o jogador "atirou", o
+            jogo acaba e o jogador venceu!
+          </li>
+        </ol>
+      </div>
+      <div id="vencedores">
+        <h3>$ vencedores</h3>
+        <p></p>
+      </div>
+    </section>
+    <a id="btn-up" href="#tittle"> $ </a>
+    <script src="exec.js"></script>
+  </body>
+</html>
